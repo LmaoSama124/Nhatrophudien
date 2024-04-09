@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="/NhaTro/assets/css/normalize.min.css">
+    <link rel="stylesheet" href="/NhaTro/assets/fonts/fontawesome-free-6.5.1-web/css/all.css">
+    <title>Apartment</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="header-section">
+            <div class="header-content">
+                <h1 class="title">Review Nhà Trọ</h1>
+                <div class="account">
+                    <div class="account-btn">
+                        <a class="account__login js-click-login-box">
+                            Tài khoản
+                            <div class="account__icon-user">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <div class="nav-bar">
+                <div class="nav-item">
+                    <a href="" class="nav-btn">Trang Chủ</a>
+                </div>
+                <div class="nav-item">
+                    <a href="" class="nav-btn">Nhà Trọ</a>
+                </div>
+                <div class="nav-item">
+                    <a href="" class="nav-btn">Chung cư Mini</a>
+                </div>
+                <div class="nav-item">
+                    <a href="" class="nav-btn">Nhà Nguyên Căn</a>
+                </div>
+
+                <!-- Search-btn -->
+                <div class="search-btn">
+                    <label for="search-box" class="fa-solid fa-magnifying-glass style-icon"></label>
+                    <input type="text" id="search-box" placeholder="Search">
+                </div>
+            </div>
+
+            <!-- Selected -->
+            <div class="sub-nav">
+                <div class="sub-nav-item">
+                    <select name="option" class="selected-box">
+                        <option value="" disabled-selected>Nhà trọ</option>
+                        <option value="1">Vị trí 1</option>
+                        <option value="2">Vị trí 2</option>
+                    </select>
+                </div>
+                <div class="sub-nav-item">
+                    <select name="option" class="selected-box">
+                        <option value="" disabled-selected>Chọn vị trí</option>
+                        <option value="1">Vị trí 1</option>
+                        <option value="2">Vị trí 2</option>
+                    </select>
+                </div>
+                <div class="sub-nav-item">
+                    <select name="option" class="selected-box">
+                    </select>
+                </div>
+                <div class="sub-nav-item">
+                    <select name="option" class="selected-box">
+
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div id="content">
+        <div class="content__ads"></div>
+        <div class="content__main">
+            <!-- Description -->
+            <div class="content__des">
+                <!-- Main content (Slider, Information) -->
+                <div class="content__des-main">
+                    <div class="slider-container">
+                        <div class="list-slides">
+                            <div class="item__slide" id="slide__1">1</div>
+                            <div class="item__slide" id="slide__2">2</div>
+                            <div class="item__slide" id="slide__3">3</div>
+                            <div class="item__slide" id="slide__4">4</div>
+                        </div>
+
+                        <!-- Dots-Controler -->
+                        <div class="slider__controler">
+                            <a href="#slide__1" class="dots"></a>
+                            <a href="#slide__2" class="dots"></a>
+                            <a href="#slide__3" class="dots"></a>
+                            <a href="#slide__4" class="dots"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sub-content (avatar, Information, address, contact) -->
+                <div class="content__sub-des">
+
+                </div>
+            </div>
+
+            <!-- Related list -->
+            <div class="content__related">
+
+            </div>
+        </div>
+        <div class="content__ads"></div>
+    </div>
+
+    <!-- Footer -->
+
+    <div id="footer">
+        <div class="footer-row">
+            <div class="title-website">
+                <h2 class="title">Review Nhà Trọ</h2>
+            </div>
+
+            <div class="list-icon">
+                <div class="box-icon"><a href="">
+                        <img src="/NhaTro/assets/img/Footer/SocialMedia/Instagram.png" alt="Instagram"
+                            class="icon-item">
+                </div>
+                </a>
+                <div class="box-icon"><a href="">
+                        <img src="/NhaTro/assets/img/Footer/SocialMedia/Tiktok.png" alt="Tiktok" class="icon-item">
+                </div>
+                </a>
+                <div class="box-icon"><a href="https://www.facebook.com/profile.php?id=61557619072099">
+                        <img src="/NhaTro/assets/img/Footer/SocialMedia/facebook.png" alt="Facebook" class="icon-item">
+                </div>
+                </a>
+                <div class="box-icon"><a href="">
+                        <img src="/NhaTro/assets/img/Footer/SocialMedia/Youtube.png" alt="Youtube" class="icon-item">
+                </div>
+                </a>
+                <div class="box-icon"><a href="https://zalo.me/0886528046">
+                        <img src="/NhaTro/assets/img/Footer/SocialMedia/Zalo.png" alt="Zalo" class="icon-item"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login UI -->
+
+    <div class="UI__function">
+        <div class="UI__login container  js-click-container" id="container">
+            <div class="form-container sign-up-container">
+                <form action="#">
+                    <h1>Tạo Tài Khoản Mới</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <span>hoặc sử dụng Email để tạo tài khoản</span>
+                    <input type="text" placeholder="Tên người dùng" />
+                    <input type="email" placeholder="Email" />
+                    <input type="password" placeholder="Mật khẩu" />
+                    <button class="UI__Sign-up-btn">Đăng ký</button>
+                </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <form action="#">
+                    <h1>Đăng Nhập</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fa-brands fa-instagram"></i></i></a>
+                    </div>
+                    <span>hoặc sử dụng tài khoản của bạn</span>
+                    <input type="email" placeholder="Email" />
+                    <input type="password" placeholder="Mật khẩu" />
+                    <a href="#">Quên mật khẩu?</a>
+                    <button>Đăng nhập</button>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Chào Mừng!</h1>
+                        <p>Để giữ liên lạc được với chúng tôi xin hãy sử dụng thông tin cá nhân của bạn</p>
+                        <button class="ghost" id="signIn">Đăng Nhập</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Xin chào!</h1>
+                        <p>Điền thông tin cá nhân của bạn và bắt đầu cuộc hành trình với chúng tôi nao!</p>
+                        <button class="ghost" id="signUp">Đăng Ký</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <!-- JavaScript -->
+
+    <!-- Turn on/off login box -->
+    <script>
+        const loginBtn = document.querySelector('.js-click-login-box')
+        const loginBox = document.querySelector('.UI__function')
+        const clickCtn = document.querySelector('.js-click-container')
+
+        function showLoginBox() {
+            loginBox.classList.add('open')
+        }
+
+        function closeLoginBox() {
+            loginBox.classList.remove('open')
+        }
+
+        loginBtn.addEventListener('click', showLoginBox)
+        loginBox.addEventListener('click', closeLoginBox)
+        clickCtn.addEventListener('click', function (event) {
+            event.stopPropagation()
+        })
+    </script>
+
+    <!-- Slide login and sign-up -->
+    <script>
+        const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const container = document.getElementById('container');
+
+        signUpButton.addEventListener('click', () => {
+            container.classList.add("right-panel-active");
+        });
+
+        signInButton.addEventListener('click', () => {
+            container.classList.remove("right-panel-active");
+        });
+    </script>
+    <div class="clear"></div>
+</body>
+
+</html>
