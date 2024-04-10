@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/normalize.min.css">
-    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.5.1-web/css/all.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <title>Nhà trọ phú diễn</title>
 </head>
@@ -18,7 +18,12 @@
                 <h1 class="title">Review Nhà Trọ</h1>
                 <div class="account">
                     <div class="account-btn">
-                        <a class="login-sign-up js-click-login-box">Đăng nhập/ Đăng kí</a>
+                        <a class="account__login js-click-login-box">
+                            Tài khoản
+                            <div class="account__icon-user">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -40,7 +45,7 @@
 
                 <!-- Search-btn -->
                 <div class="search-btn">
-                    <label for="search-box" class="ti-search style-icon"></label>
+                    <label for="search-box" class="fa-solid fa-magnifying-glass style-icon"></label>
                     <input type="text" id="search-box" placeholder="Search">
                 </div>
             </div>
@@ -86,7 +91,8 @@
                 <!-- Banner -->
                 <div class="banner">
                     <h2 class="banner-heading">Tìm kiếm phòng trọ theo cách của bạn</h2>
-                    <p class="banner-sub-heading">Kênh tìm kiếm phòng tại Phú Diễn Hà Nội - Website tìm kiếm, đăng tin cho thuê phòng trọ, chung cư mini, nhà nguyên căn</p>
+                    <p class="banner-sub-heading">Kênh tìm kiếm phòng tại Phú Diễn Hà Nội - Website tìm kiếm, đăng tin
+                        cho thuê phòng trọ, chung cư mini, nhà nguyên căn</p>
                     <div class="banner-img">
                         <img src="./assets/img/Content/Banner/TroAnhLam2.jpg" alt="" class="img-item">
                         <img src="./assets/img/Content/Banner/TroAnhViet.jpg" alt="" class="img-item">
@@ -108,17 +114,50 @@
                         </div>
 
                         <!-- List-suggestion -->
-                        <div class="suggestion-item img-1">
-                            <a href="" class="des-suggestion"></a>
+                        <div class="suggestion-item">
+                            <div class="content__suggestion-img">
+                                <img src="assets/img/Content/Suggestion/Nhatrophudien.jpg" alt="">
+                            </div>
+                            <a href="./Apartment/Apartment.html" class="content__suggestion-direct">
+                                <div class="content__suggestion-des">
+                                    <p>Tên chủ trọ: <span class="content__suggestion-name"> LmaoSama</span></p>
+                                    <p>Địa chỉ: <span class="content__suggestion-address"> Phú Diễn</span></p>
+                                    <p>Giá tiền: <span class="content__suggestion-cost"> 2.500.000/Tháng</span></p>
+                                    <p>Đánh giá: </p>
+                                </div>
+                            </a>
                         </div>
 
-                        <div class="suggestion-item img-2">
-                            <a href="" class="des-suggestion"></a>
+                        <div class="suggestion-item">
+                            <div class="content__suggestion-img">
+                                <img src="assets/img/Content/Suggestion/troHQV.jpg" alt="">
+                            </div>
+                            <a href="#" class="content__suggestion-direct">
+                                <div class="content__suggestion-des">
+                                    <p>Tên chủ trọ: <span class="content__suggestion-name"> LmaoSama</span></p>
+                                    <p>Địa chỉ: <span class="content__suggestion-address"> Phú Diễn</span></p>
+                                    <p>Giá tiền: <span class="content__suggestion-cost"> 2.500.000/Tháng</span></p>
+                                    <p>Đánh giá: </p>
+                                </div>
+                            </a>
                         </div>
 
-                        <div class="suggestion-item img-3">
-                            <a href="" class="des-suggestion"></a>
+                        <div class="suggestion-item">
+                            <div class="content__suggestion-img">
+                                <img src="assets/img/Content/Suggestion/Nhatrophudien.jpg" alt="">
+                            </div>
+                            <a href="#" class="content__suggestion-direct">
+                                <div class="content__suggestion-des">
+                                    <p>Tên chủ trọ: <span class="content__suggestion-name"> LmaoSama</span></p>
+                                    <p>Địa chỉ: <span class="content__suggestion-address"> Phú Diễn</span></p>
+                                    <p>Giá tiền: <span class="content__suggestion-cost"> 2.500.000/Tháng</span></p>
+                                    <p>Đánh giá: </p>
+                                </div>
+                            </a>
                         </div>
+
+                        <!-- End list suggestion -->
+
                     </div>
 
                     <div class="filter-function">
@@ -157,73 +196,113 @@
 
             <div class="list-icon">
                 <div class="box-icon"><a href="">
-                    <img src="./assets/img/Footer/SocialMedia/Instagram.png" alt="Instagram" class="icon-item"></div>
+                        <img src="./assets/img/Footer/SocialMedia/Instagram.png" alt="Instagram" class="icon-item">
+                </div>
                 </a>
                 <div class="box-icon"><a href="">
-                    <img src="./assets/img/Footer/SocialMedia/Tiktok.png" alt="Tiktok" class="icon-item"></div>
+                        <img src="./assets/img/Footer/SocialMedia/Tiktok.png" alt="Tiktok" class="icon-item"></div>
                 </a>
                 <div class="box-icon"><a href="https://www.facebook.com/profile.php?id=61557619072099">
-                    <img src="./assets/img/Footer/SocialMedia/facebook.png" alt="Facebook" class="icon-item"></div>
+                        <img src="./assets/img/Footer/SocialMedia/facebook.png" alt="Facebook" class="icon-item"></div>
                 </a>
                 <div class="box-icon"><a href="">
-                    <img src="./assets/img/Footer/SocialMedia/Youtube.png" alt="Youtube" class="icon-item"></div>
+                        <img src="./assets/img/Footer/SocialMedia/Youtube.png" alt="Youtube" class="icon-item"></div>
                 </a>
                 <div class="box-icon"><a href="https://zalo.me/0886528046">
-                    <img src="./assets/img/Footer/SocialMedia/Zalo.png" alt="Zalo" class="icon-item"></div>
+                        <img src="./assets/img/Footer/SocialMedia/Zalo.png" alt="Zalo" class="icon-item"></div>
                 </a>
             </div>
         </div>
     </div>
 
     <!-- Login UI -->
-    <form action="">
-        <div class="login-section">
-                <div class="login-box js-click-container">
-        
-                    <div class="head-box">
-                        <h3 class="title-box">
-                            <i class="ti-user icon-title-box"></i> Đăng nhập</h3>
+    <div class="UI__function">
+        <div class="UI__login container  js-click-container" id="container">
+            <div class="form-container sign-up-container">
+                <form action="#">
+                    <h1>Tạo Tài Khoản Mới</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fa-brands fa-instagram"></i></a>
                     </div>
-        
-                    <div class="content-box">
-                        <input type="text" required class="box-input" placeholder="Tên đăng nhập" style="text-align: center; font-family: Myriad_Pro;">
-                        <input type="password" required class="box-input" placeholder="Mật khẩu" style="text-align: center; font-family: Myriad_Pro;">
-                        <input type="submit" class="submit-btn">
-                        <div class="clear"></div>
+                    <span>hoặc sử dụng Email để tạo tài khoản</span>
+                    <input type="text" placeholder="Tên người dùng" />
+                    <input type="email" placeholder="Email" />
+                    <input type="password" placeholder="Mật khẩu" />
+                    <button class="UI__Sign-up-btn">Đăng ký</button>
+                </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <form action="#">
+                    <h1>Đăng Nhập</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fa-brands fa-instagram"></i></i></a>
                     </div>
-        
-                    <div class="foot-box mt-8">
-                        <a href="" class="forgot-func mb-8">Quên mật khẩu</a>
-                        <a href="" class="register-func mb-8">Đăng kí tài khoản</a>
+                    <span>hoặc sử dụng tài khoản của bạn</span>
+                    <input type="email" placeholder="Email" />
+                    <input type="password" placeholder="Mật khẩu" />
+                    <a href="#">Quên mật khẩu?</a>
+                    <button>Đăng nhập</button>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Chào Mừng!</h1>
+                        <p>Để giữ liên lạc được với chúng tôi xin hãy sử dụng thông tin cá nhân của bạn</p>
+                        <button class="ghost" id="signIn">Đăng Nhập</button>
                     </div>
-        
+                    <div class="overlay-panel overlay-right">
+                        <h1>Xin chào!</h1>
+                        <p>Điền thông tin cá nhân của bạn và bắt đầu cuộc hành trình với chúng tôi nao!</p>
+                        <button class="ghost" id="signUp">Đăng Ký</button>
+                    </div>
                 </div>
+            </div>
         </div>
-    </form>
+        <div class="clear"></div>
+    </div>
 
+        <!-- JavaScript -->
 
-    <!-- JavaScript -->
+        <!-- Turn on/off login box -->
+        <script>
+            const loginBtn = document.querySelector('.js-click-login-box')
+            const loginBox = document.querySelector('.UI__function')
+            const clickCtn = document.querySelector('.js-click-container')
 
-    <!-- Turn on/off login box -->
-    <script>
-        const loginBtn = document.querySelector('.js-click-login-box')
-        const loginBox = document.querySelector('.login-section')
-        const clickCtn = document.querySelector('.js-click-container')
+            function showLoginBox() {
+                loginBox.classList.add('open')
+            }
 
-        function showLoginBox() {
-            loginBox.classList.add('open')
-        }
+            function closeLoginBox() {
+                loginBox.classList.remove('open')
+            }
 
-        function closeLoginBox() {
-            loginBox.classList.remove('open')
-        }
+            loginBtn.addEventListener('click', showLoginBox)
+            loginBox.addEventListener('click', closeLoginBox)
+            clickCtn.addEventListener('click', function (event) {
+                event.stopPropagation()
+            })
+        </script>
 
-        loginBtn.addEventListener('click',showLoginBox)
-        loginBox.addEventListener('click',closeLoginBox)
-        clickCtn.addEventListener('click', function (event){
-            event.stopPropagation()
-        })
-    </script>
+        <!-- Slide login and sign-up -->
+        <script>
+            const signUpButton = document.getElementById('signUp');
+            const signInButton = document.getElementById('signIn');
+            const container = document.getElementById('container');
+
+            signUpButton.addEventListener('click', () => {
+                container.classList.add("right-panel-active");
+            });
+
+            signInButton.addEventListener('click', () => {
+                container.classList.remove("right-panel-active");
+            });
+        </script>
 </body>
 
 </html>
