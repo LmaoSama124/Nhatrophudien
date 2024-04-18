@@ -1,8 +1,10 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $username=$_POST['username'];
     $email = $_POST['email'];
     $password = $_POST['password'];
 
+    $connection =new PDO("mysql:host=localhost;dbname=demonhatro;charset=utf8","root","");
     // kiểm tra nhập email
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $error = "Email không hợp lệ!";
@@ -10,11 +12,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // chuyển hướng sang register.php để truyền thông tin bị lỗi cho file đó và đảm bảo các kí tự ko bị lỗi (urlencode)
         exit;
     }
-    // lưu dữ liệu vào file users.txt
-    $file = 'users.txt';
-    $data = "$email,$password\n";
-    file_put_contents($file, $data, FILE_APPEND | LOCK_EX);
 
-    echo "Đăng ký thành công!";
+    $query="insert into users(username,password,email) value('$username','$password','$email')";
+    // Thực thi câu truy vấn
+    $stmt=$connection->prepare($query);
+    $stmt->execute();
+
+    // Lưu thành công thì chuyển về trang hiển thị dữ liệu
+    header('location:select.php');
 }
 ?>
