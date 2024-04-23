@@ -11,7 +11,5 @@
     <h1><a href="login.php">Đăng nhập</a></h1>
     <h1><a href="register.php">Đăng ký</a></h1>
     <h1><a href="select.php">Hiển thị dữ liệu</a></h1>
-    <h1><a href="insert.php">Thêm dữ liệu</a></h1>
-    <h1><a href="select-update-delete.php">Cập nhật dữ liệu</a></h1>
 </body>
 </html>
