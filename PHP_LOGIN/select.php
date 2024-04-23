@@ -8,20 +8,19 @@
 </head>
 <body>
     <?php 
-    // Chuỗi kết nối đến CSDL
+
         $connection =new PDO("mysql:host=localhost;dbname=demonhatro;charset=utf8","root","");
-        // Câu truy vấn
+
         $query="select * from users";
 
-        // Thực thi câu truy vấn
+
         $stmt=$connection->prepare($query);
         $stmt->execute();
-        // Khai báo biến để nhận dữ liệu được lấy ra
-        $users=$stmt->fetchAll();
 
-        // Test thử dữ liệu có lấy được không
-        //var_dump($users);
+        $users=$stmt->fetchAll();
     ?>
+
+
     <h1>Thông tin tài khoản</h1>
     <table border="1">
         <thead>
@@ -32,7 +31,6 @@
             </tr>
         </thead>
         <tbody>
-            <!-- Lấy dữ liệu nhiều dòng -->
             <?php foreach($users as $u): ?>
                 <tr>
                     <td><?php echo $u['username'] ?></td>
@@ -42,7 +40,118 @@
             <?php endforeach?>
         </tbody>
     </table>
-    <h1><a href="insert.php">Thêm dữ liệu</a></h1>
-    <h1><a href="select-update-delete.php">Cập nhật dữ liệu</a></h1>
+    <h1><a href="users-insert.php">Thêm dữ liệu</a></h1>
+    <h1><a href="users-select-update-delete.php">Cập nhật dữ liệu</a></h1>
+    <?php 
+
+
+
+
+
+        $query="select * from accommodations";
+
+
+        $stmt=$connection->prepare($query);
+        $stmt->execute();
+
+        $accommodations=$stmt->fetchAll();
+
+
+    ?>
+    <h1>Thông tin chỗ ở</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Tên nhà trọ</th>
+                <th>Địa chỉ</th>
+                <th>Miêu tả</th>
+                <th>Giá tiền</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <?php foreach($accommodations as $u): ?>
+                <tr>
+                    <td><?php echo $u['name'] ?></td>
+                    <td><?php echo $u['address'] ?></td>
+                    <td><?php echo $u['description'] ?></td>
+                    <td><?php echo $u['price'] ?></td>
+                </tr>
+            <?php endforeach?>
+        </tbody>
+    </table>
+    <h1><a href="accommodations-insert.php">Thêm dữ liệu</a></h1>
+    <h1><a href="accommodations-select-update-delete.php">Cập nhật dữ liệu</a></h1>
+</body>
+
+
+
+
+   <?php 
+        $query="select * from reviews";
+
+
+        $stmt=$connection->prepare($query);
+        $stmt->execute();
+
+        $reviews=$stmt->fetchAll();
+    ?>
+
+    <h1>Đánh giá</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nội dung</th>
+                <th>Xếp hạng</th>
+                <th>Ngày đăng</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <?php foreach($reviews as $u): ?>
+                <tr>
+                    <td><?php echo $u['content'] ?></td>
+                    <td><?php echo $u['rating'] ?></td>
+                    <td><?php echo $u['date_posted'] ?></td>
+                </tr>
+            <?php endforeach?>
+        </tbody>
+    </table>
+    <h1><a href="reviews-insert.php">Thêm dữ liệu</a></h1>
+    <h1><a href="reviews-select-update-delete.php">Cập nhật dữ liệu</a></h1>
+</body>
+
+
+
+<?php 
+
+        $query="select * from comments";
+
+
+        $stmt=$connection->prepare($query);
+        $stmt->execute();
+
+        $comments=$stmt->fetchAll();
+    ?>
+
+    <h1>Comments</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nội dung</th>
+                <th>Ngày đăng</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach($comments as $u): ?>
+                <tr>
+                    <td><?php echo $u['content'] ?></td>
+                    <td><?php echo $u['date_posted'] ?></td>
+                </tr>
+            <?php endforeach?>
+        </tbody>
+    </table>
+    <h1><a href="comments-insert.php">Thêm dữ liệu</a></h1>
+    <h1><a href="comments-select-update-delete.php">Cập nhật dữ liệu</a></h1>
 </body>
 </html>
