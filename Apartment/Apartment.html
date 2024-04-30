@@ -4,9 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="/NhaTro/assets/css/normalize.min.css">
     <link rel="stylesheet" href="/NhaTro/assets/fonts/fontawesome-free-6.5.1-web/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/main.css">
     <title>Apartment</title>
 </head>
 
@@ -48,33 +51,6 @@
                     <input type="text" id="search-box" placeholder="Search">
                 </div>
             </div>
-
-            <!-- Selected -->
-            <div class="sub-nav">
-                <div class="sub-nav-item">
-                    <select name="option" class="selected-box">
-                        <option value="" disabled-selected>Nhà trọ</option>
-                        <option value="1">Vị trí 1</option>
-                        <option value="2">Vị trí 2</option>
-                    </select>
-                </div>
-                <div class="sub-nav-item">
-                    <select name="option" class="selected-box">
-                        <option value="" disabled-selected>Chọn vị trí</option>
-                        <option value="1">Vị trí 1</option>
-                        <option value="2">Vị trí 2</option>
-                    </select>
-                </div>
-                <div class="sub-nav-item">
-                    <select name="option" class="selected-box">
-                    </select>
-                </div>
-                <div class="sub-nav-item">
-                    <select name="option" class="selected-box">
-
-                    </select>
-                </div>
-            </div>
         </div>
     </div>
 
@@ -84,37 +60,152 @@
         <div class="content__main">
             <!-- Description -->
             <div class="content__des">
-                <!-- Main content (Slider, Information) -->
                 <div class="content__des-main">
-                    <div class="slider-container">
-                        <div class="list-slides">
-                            <div class="item__slide" id="slide__1">1</div>
-                            <div class="item__slide" id="slide__2">2</div>
-                            <div class="item__slide" id="slide__3">3</div>
-                            <div class="item__slide" id="slide__4">4</div>
+                    <!-- Content left consist -->
+                    <div class="content__left">
+                        <!-- Main content (Slider, Information) -->
+                        <div class="container slider__container">
+                            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators slider__dots">
+                                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                                </ol>
+
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <img src="/NhaTro/assets/img/Content/Suggestion/Nhatrophudien.jpg"
+                                            style="width:100%;">
+                                    </div>
+
+                                    <div class="item">
+                                        <img src="/NhaTro/assets/img/Content/Suggestion/Nhatrophudien.jpg"
+                                            style="width:100%;">
+                                    </div>
+
+                                    <div class="item">
+                                        <img src="/NhaTro/assets/img/Content/Suggestion/Nhatrophudien.jpg"
+                                            style="width:100%;">
+                                    </div>
+
+                                    <div class="item">
+                                        <img src="/NhaTro/assets/img/Content/Suggestion/Nhatrophudien.jpg"
+                                            style="width:100%;">
+                                    </div>
+
+                                    <div class="item">
+                                        <img src="/NhaTro/assets/img/Content/Suggestion/Nhatrophudien.jpg"
+                                            style="width:100%;">
+                                    </div>
+                                </div>
+
+                                <!-- Left and right controls -->
+                                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
                         </div>
 
-                        <!-- Dots-Controler -->
-                        <div class="slider__controler">
-                            <a href="#slide__1" class="dots"></a>
-                            <a href="#slide__2" class="dots"></a>
-                            <a href="#slide__3" class="dots"></a>
-                            <a href="#slide__4" class="dots"></a>
+                        <!-- Sub-content (Information, address, contact) -->
+                        <div class="content__sub-des">
+                            <form action="#">
+                                <div class="information">
+                                    <h1 class="title">
+                                        Nhà trọ Thắng Ngoo
+                                    </h1>
+                                    <p class="cost">
+                                        30m2- 2,5 triệu/tháng
+                                    </p>
+                                    <p class="address">
+                                        Số x đường Phú Diễn
+                                    </p>
+                                    <div class="star-rating">
+                                        Xếp hạng:
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                </div>
+                            </form>
+                            <!-- Description about apartment (detail about: area, style, neighbor:v,...) -->
+                            <form action="#">
+                                <details class="description">
+                                    <summary class="more__infor">Xem chi tiết</summary>
+                                    <div class="content">
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates quos
+                                            mollitia sequi dolore tempora animi aliquid veritatis magni delectus vero
+                                            eaque laboriosam repellat, maxime deleniti placeat. Expedita quasi pariatur
+                                            in?
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident hic quam
+                                            voluptates autem aliquid veniam quis temporibus repudiandae illo, nostrum,
+                                            pariatur quae! At animi modi dignissimos corrupti placeat voluptatum!
+                                        </p>
+                                        <p>
+                                            Facilis ducimus iure officia quos possimus quaerat iusto, quas, laboriosam
+                                            sapiente autem ab assumenda eligendi voluptatum nisi eius cumque, tempore
+                                            reprehenderit optio placeat praesentium non sint repellendus consequuntur?
+                                            Nihil, soluta.
+                                        </p>
+                                    </div>
+                                </details>
+                                <div class="virtual__div"></div>
+                        </div>
+                    </div>
+                    <!-- Content right consist of Avatar, address, contact -->
+                    <div class="content__right">
+                        <div class="infor__host">
+                            <div class="avartar">
+                                <div class="avartar-img">
+                                    <img src="/NhaTro/Apartment/assets/img/avatar/Navia.jpg" class="avartar-img-item">
+                                </div>
+                                <div class="name">
+                                    <h3 class="text-name">Navia</h3>
+                                </div>
+                            </div>
+                            <div class="address">
+                                <h4 class="address-text">
+                                    Phú Diễn
+                                </h4>
+                            </div>
+                            <div class="contact">
+                                <h4 class="contact-text">
+                                    096-560-96-23
+                                </h4>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="content__related">
+                    <div class="related__list">
+                        <div class="related__item">
+                            <a href="#" class="nav__related-link">
+                                <img class="related-img" src="/NhaTro/assets/img/Content/Suggestion/img2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="related__item">
+                            <a href="#" class="nav__related-link">
+                                <img class="related-img" src="/NhaTro/assets/img/Content/Suggestion/img2.jpg" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
-
-                <!-- Sub-content (avatar, Information, address, contact) -->
-                <div class="content__sub-des">
-
-                </div>
-            </div>
-
-            <!-- Related list -->
-            <div class="content__related">
-
+                <!-- Related list -->
             </div>
         </div>
+
         <div class="content__ads"></div>
     </div>
 
@@ -238,6 +329,133 @@
 
         signInButton.addEventListener('click', () => {
             container.classList.remove("right-panel-active");
+        });
+    </script>
+
+    <!-- More information -->
+    <script>
+        class Accordion {
+            constructor(el) {
+                // Store the <details> element
+                this.el = el;
+                // Store the <summary> element
+                this.summary = el.querySelector(".more__infor");
+                // Store the <div class="content"> element
+                this.content = el.querySelector(".content");
+
+                // Store the animation object (so we can cancel it if needed)
+                this.animation = null;
+                // Store if the element is closing
+                this.isClosing = false;
+                // Store if the element is expanding
+                this.isExpanding = false;
+                // Detect user clicks on the summary element
+                this.summary.addEventListener("click", (e) => this.onClick(e));
+            }
+
+            onClick(e) {
+                // Stop default behaviour from the browser
+                e.preventDefault();
+                // Add an overflow on the <details> to avoid content overflowing
+                this.el.style.overflow = "hidden";
+                // Check if the element is being closed or is already closed
+                if (this.isClosing || !this.el.open) {
+                    this.open();
+                    // Check if the element is being openned or is already open
+                } else if (this.isExpanding || this.el.open) {
+                    this.shrink();
+                }
+            }
+
+            shrink() {
+                // Set the element as "being closed"
+                this.isClosing = true;
+
+                // Store the current height of the element
+                const startHeight = `${this.el.offsetHeight}px`;
+                // Calculate the height of the summary
+                const endHeight = `${this.summary.offsetHeight}px`;
+
+                // If there is already an animation running
+                if (this.animation) {
+                    // Cancel the current animation
+                    this.animation.cancel();
+                }
+
+                // Start a WAAPI animation
+                this.animation = this.el.animate(
+                    {
+                        // Set the keyframes from the startHeight to endHeight
+                        height: [startHeight, endHeight]
+                    },
+                    {
+                        duration: 400,
+                        easing: "ease-out"
+                    }
+                );
+
+                // When the animation is complete, call onAnimationFinish()
+                this.animation.onfinish = () => this.onAnimationFinish(false);
+                // If the animation is cancelled, isClosing variable is set to false
+                this.animation.oncancel = () => (this.isClosing = false);
+            }
+
+            open() {
+                // Apply a fixed height on the element
+                this.el.style.height = `${this.el.offsetHeight}px`;
+                // Force the [open] attribute on the details element
+                this.el.open = true;
+                // Wait for the next frame to call the expand function
+                window.requestAnimationFrame(() => this.expand());
+            }
+
+            expand() {
+                // Set the element as "being expanding"
+                this.isExpanding = true;
+                // Get the current fixed height of the element
+                const startHeight = `${this.el.offsetHeight}px`;
+                // Calculate the open height of the element (summary height + content height)
+                const endHeight = `${this.summary.offsetHeight + this.content.offsetHeight
+                    }px`;
+
+                // If there is already an animation running
+                if (this.animation) {
+                    // Cancel the current animation
+                    this.animation.cancel();
+                }
+
+                // Start a WAAPI animation
+                this.animation = this.el.animate(
+                    {
+                        // Set the keyframes from the startHeight to endHeight
+                        height: [startHeight, endHeight]
+                    },
+                    {
+                        duration: 400,
+                        easing: "ease-out"
+                    }
+                );
+                // When the animation is complete, call onAnimationFinish()
+                this.animation.onfinish = () => this.onAnimationFinish(true);
+                // If the animation is cancelled, isExpanding variable is set to false
+                this.animation.oncancel = () => (this.isExpanding = false);
+            }
+
+            onAnimationFinish(open) {
+                // Set the open attribute based on the parameter
+                this.el.open = open;
+                // Clear the stored animation
+                this.animation = null;
+                // Reset isClosing & isExpanding
+                this.isClosing = false;
+                this.isExpanding = false;
+                // Remove the overflow hidden and the fixed height
+                this.el.style.height = this.el.style.overflow = "";
+            }
+        }
+
+        document.querySelectorAll(".description").forEach((el) => {
+            new Accordion(el);
         });
     </script>
     <div class="clear"></div>
