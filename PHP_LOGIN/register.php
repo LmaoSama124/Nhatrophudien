@@ -11,7 +11,7 @@
 <h2>Đăng ký</h2>
 
 <?php
-// Hiển thị thông báo nhập sai nếu có
+
 if (isset($_GET['error'])) {
     echo "<p style='color: red;'>".$_GET['error']."</p>";
 }

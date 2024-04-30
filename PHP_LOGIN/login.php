@@ -10,7 +10,7 @@
 
 <h2>Đăng nhập</h2>
 <?php
-// Hiển thị thông báo nếu bị lỗi đăng nhập
+
 if (isset($_GET['error'])) {
     echo "<p style='color: red;'>".$_GET['error']."</p>";
 }
