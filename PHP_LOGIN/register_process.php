@@ -4,6 +4,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $password = $_POST['password'];
 
+    // echo($username);
+
     $connection =new PDO("mysql:host=localhost;dbname=demonhatro;charset=utf8","root","");
 
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
