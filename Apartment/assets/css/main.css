@@ -88,7 +88,7 @@ html, body {
 #header .nav-bar {
 	display: block;
 	background-color: rgb(41, 171, 223);
-	height: 44px;
+	height: 47px;
 	width: 100%;
 }
 
@@ -96,14 +96,16 @@ html, body {
 	display: block;
 	float: left;
 	text-align: center;
-	padding: 12px 24px;
 	position: relative;
 	cursor: pointer;
 }
 
 #header .nav-bar a {
+	padding: 12px 24px;
+	display: block;
 	text-decoration: none;
 	color: #000;
+	font-size: 16px;
 	line-height: 1.4;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -134,7 +136,7 @@ html, body {
 #header .search-btn {
 	display: flex;
 	float: right;
-	padding: 13px 24px;
+	padding: 11.5px 24px;
 }
 
 .search-btn .search-box {
