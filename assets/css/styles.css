@@ -27,6 +27,14 @@ html {
     margin-bottom: 8px !important;
 }
 
+.checked {
+	color: #ffa500;
+}
+
+.star-rating {
+    margin: 8px;
+}
+
 /* Main */
 
 /* Header */
@@ -94,14 +102,15 @@ html {
     display: block;
     float: left;
     text-align: center;
-    padding: 12px 24px;
     position: relative;
     cursor: pointer;
 }
 
 #header .nav-bar a {
+    display: block;
     text-decoration: none;
     color: #000;
+    padding: 12px 24px;
     line-height: 1.4;
     font-weight: bold;
     text-transform: uppercase;
@@ -132,7 +141,7 @@ html {
 #header .search-btn {
     display: flex;
     float: right;
-    padding: 13px 24px;
+    padding: 11.5px 24px;
 }
 
 .search-btn .search-box {
@@ -154,6 +163,7 @@ html {
 /* Content */
 
 #content {
+    margin-bottom: 5px;
     display: block;
 }
 
@@ -183,9 +193,9 @@ html {
     padding: 4px 0;
     line-height: 1.4;
     text-transform: uppercase;
-    font-weight: 550;
+    font-weight: bold;
     font-size: 20px;
-    margin: 20px 0 0 0;
+    margin: 0;
 }
 
 #content .banner-sub-heading {
