@@ -219,7 +219,7 @@
     <div class="UI__function">
         <div class="UI__login container  js-click-container" id="container">
             <div class="form-container sign-up-container">
-                <form action="#">
+                <form action="PHP_LOGIN/register_process.php" method="POST">
                     <h1>Tạo Tài Khoản Mới</h1>
                     <div class="social-container">
                         <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -227,14 +227,14 @@
                         <a href="#" class="social"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                     <span>hoặc sử dụng Email để tạo tài khoản</span>
-                    <input type="text" placeholder="Tên người dùng" />
-                    <input type="email" placeholder="Email" />
-                    <input type="password" placeholder="Mật khẩu" />
-                    <button class="UI__Sign-up-btn">Đăng ký</button>
+                    <input type="text" name="username" placeholder="Nhập username"/>
+                    <input type="email" name="email" placeholder="Nhập email">
+                    <input type="password" name="password" placeholder="Nhập password">
+                    <button type="submit" class="UI__Sign-up-btn">Đăng ký</button>
                 </form>
             </div>
             <div class="form-container sign-in-container">
-                <form action="#">
+                <form action="PHP_LOGIN/login_process.php" method="POST"></form>
                     <h1>Đăng Nhập</h1>
                     <div class="social-container">
                         <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -242,8 +242,8 @@
                         <a href="#" class="social"><i class="fa-brands fa-instagram"></i></i></a>
                     </div>
                     <span>hoặc sử dụng tài khoản của bạn</span>
-                    <input type="email" placeholder="Email" />
-                    <input type="password" placeholder="Mật khẩu" />
+                    <input type="email" name="email" placeholder="Email" />
+                    <input type="password" name="password" placeholder="Mật khẩu" />
                     <a href="#">Quên mật khẩu?</a>
                     <button>Đăng nhập</button>
                 </form>
